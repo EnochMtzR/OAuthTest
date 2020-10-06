@@ -1,0 +1,8 @@
+node_modules/**/*
+coverage/**/*
+dist/**/*
+debug/**/*
+log/**/*
+.env
+*.pem
+*.cer

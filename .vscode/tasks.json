@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "compile-typescript",
+			"command": "npm run build-dev",
+			"type": "shell",
+			"args": [],
+			"problemMatcher": ["$tsc"],
+			"presentation": {
+				"reveal": "always"
+			},
+			"group": "build"
+		}
+	]
+}

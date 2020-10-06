@@ -1,0 +1,50 @@
+{
+	"name": "inclassifiers",
+	"version": "1.0.0",
+	"description": "REST Service for general classifications",
+	"main": "app.js",
+	"scripts": {
+		"clean": "node clean",
+		"build-dev": "npm run clean && tsc --project tsconfig.dev.json",
+		"build": "npm run clean && tsc",
+		"build-watch": "npm run clean && tsc -w",
+		"start": "npm run build-watch & nodemon ./dist/app.js -w",
+		"test": "jest --coverage"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@ssh.dev.azure.com:v3/Integra-Web/InClassifiers/InClassifiers"
+	},
+	"author": "Inhys",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/axios": "^0.14.0",
+		"@types/chalk": "^2.2.0",
+		"@types/dotenv": "^8.2.0",
+		"@types/jest": "^25.1.4",
+		"@types/koa": "^2.11.2",
+		"@types/koa-bodyparser": "^4.3.0",
+		"@types/koa-router": "^7.4.0",
+		"@types/moment": "^2.13.0",
+		"@types/openid-client": "^3.7.0",
+		"@types/pg": "^7.14.2",
+		"@typescript-eslint/eslint-plugin": "^2.23.0",
+		"@typescript-eslint/parser": "^2.23.0",
+		"eslint": "^6.8.0",
+		"jest": "^25.1.0",
+		"prettier": "^1.19.1",
+		"ts-jest": "^25.2.1",
+		"typescript": "^3.8.3"
+	},
+	"dependencies": {
+		"axios": "^0.19.2",
+		"chalk": "^3.0.0",
+		"dotenv": "^8.2.0",
+		"koa": "^2.11.0",
+		"koa-bodyparser": "^4.2.1",
+		"koa-router": "^8.0.8",
+		"moment": "^2.24.0",
+		"openid-client": "^4.2.0",
+		"pg": "^7.18.2"
+	}
+}
